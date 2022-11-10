@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    
+
+    
+    <ul style="text-align: center;"><h1 >FEEDBACK ABOUT OUR UNIVERSITY</h1></ul>
+    <!-- <form method="POST" name ="formxx" onsubmit="validation()"> -->
+<div style="border: 2px solid green; min-width: 300px; min-height: 300px;" class="center">
+
+<br>
+        <form method="POST" name ="formxx" onsubmit="validation()" action="digital.html">
+        
+       name <input type="text" name="text" id="text" required  placeholder="enter your name">
+        <br>
+        <br>
+       email <input type="email" name="email"  required placeholder="enter email">
+        <br>
+        <fieldset>
+            <legend>
+                which evevt do you like
+            </legend>
+                <div>
+                    football <input type="checkbox" name="checkbox" id="checkbox">
+                    baseball <input type="checkbox" name="checkbox" id="checkbox">
+                    cricket  <input type="checkbox" name="checkbox" id="checkbox">
+                    basktball <input type="checkbox" name="checkbox" id="checkbox">
+                    
+                     dance<input type="checkbox" name="checkbox" id="checkbox">
+                     pc game<input type="checkbox" name="checkbox" id="checkbox">
+                </div>
+           
+        </fieldset> 
+        <div>
+            <fieldset>
+                <legend> how to know about this evevt</legend>
+                TV<input type="radio" name="tv" id="tv" default >
+                radio <input type="radio" name="tv" id="tv">
+                friends <input type="radio" name="tv" id="tv">
+                ad <input type="radio" name="tv" id="tv">
+            </fieldset>
+           
+        </div>
+        <br>
+        <div>
+            <textarea name="address" id=" address" cols="40" rows="10" placeholder="comments"></textarea>
+        </div>
+        <br>
+        <!-- <input type="password" name="password" required id="password"> -->
+        <br>
+        <input type="submit" value="submit"  >
+        <input type="reset" value="reset">
+    </form>
+</div>
+</body>
+</html>
+
+
+<!-- <script>
+    function validation()
+    {
+
+    
+   let  name= 'shaheed';
+   let  password=123;
+    let x=document.formxx.text.value;
+    let y=document.formxx.password.value;
+    if(name==x && password==y)
+    {
+        return(alert(" login"));
+    }
+    else
+    {
+       return (alert("login fail")) ;
+        
+    }
+      
+    }
+</script> -->
