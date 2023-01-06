@@ -1,0 +1,25 @@
+*{
+    text-align: center;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    font-size: 30px;
+    
+}
+.topbar{
+    background-color: red;
+    height: 50px;
+}
+.downbar{
+    background-color: red;
+    height: 50px;   
+}
+.image{
+     margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+li{
+    padding: 5px;
+    color: white;
+}
