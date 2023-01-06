@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    
+    function validaton()
+    {
+        let name=document.forms['frm']['name'].value;
+        let email=document.forms["frm"]["email"].value;
+        let contact=document.forms["frm"]["number"].value;
+        var phoneno=  /^\d{10}$/;
+        var emaila=  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        if (name=="")
+        {
+             alert("name can't be empty");
+             return false;
+        }
+        if (contact == "")
+        { 
+            alert("number cant be empty");
+            return false;
+        }
+        else if(!(contact.match(phoneno)))
+            {
+                alert("enter a valied number");
+                return false;
+            }
+        
+        if( email ==" ")
+        {
+          alert("email can't be empty");
+          return false;
+        }
+        else if(!(email.match(emaila)))
+            {
+                alert("enter a valied email");
+                return false;
+            }
+            else{
+                alert("success");
+             }
+        
+    }
+</script>
+<body>
+    <form action="" id="frm" method="get" onsubmit="return validaton()">
+        <input type="text" name="name" id="name">
+        <input type="text" name="number" id="number" maxlength="10" >
+      <input type="email" name="email" id="email">
+      <input type="submit" value="submit">
+
+        
+        
+        </form>
+      </body>
+</html>
